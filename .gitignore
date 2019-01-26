@@ -115,8 +115,4 @@ dmypy.json
 .pyre/
 
 #latex
-/rapport/*.aux
-/rapport/*.dvi
-/rapport/*.log
-/rapport/*.gz
-/rapport/*.tex
+/rapport
