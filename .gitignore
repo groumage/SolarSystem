@@ -115,4 +115,5 @@ dmypy.json
 .pyre/
 
 #latex
-/rapport
+/rapport/*
+!/rapport/rapport.pdf
