@@ -17,7 +17,7 @@ nb_planets = len(planet)
 
 def distance_soleil_ini():
     for i in range(1, nb_planets):
-        print("La distance au 1er septembre 2012 à 00h00 entre " + planet[i] + " et le Soleil est : " + str(linalg.norm(pos_ini[i])) + " ua.")
+        print("La distance au 1er septembre 2012 a 00h00 entre " + planet[i] + " et le Soleil est : " + str(linalg.norm(pos_ini[i])) + " ua.")
 
 def calc_energy(pos, vit):
     a = 0
@@ -37,7 +37,7 @@ def calc_vit(i, pos):
     return res
     
 def solaire_euler(dt, N):
-    length = math.floor(N/dt)
+    length = (int)(math.floor(N/dt))
     pos = zeros((length, nb_planets, 3))
     energy = zeros(length)
     pos_old = pos_ini
@@ -76,7 +76,7 @@ def solaire_euler(dt, N):
     plt.show()
     
 def solaire_stormer_verlet(dt, N):
-    length = math.floor(N/dt)
+    length = (int)(math.floor(N/dt))
     pos = zeros((length, nb_planets, 3))
     energy = zeros(length)
     pos_old = pos_ini
@@ -107,7 +107,6 @@ def solaire_stormer_verlet(dt, N):
             z_list[j] = pos[j][i][2]
         ax.plot(x_list, y_list, z_list, '-', color=colors[i], label=planet[i])
         ax.legend()
-    plt.show()
     
     fig = plt.figure('Hamiltonien_stormer_verlet')
     t = linspace(0, N, length)
@@ -125,7 +124,7 @@ def indice_min(tab):
     return ind_min
     
 def revolution(dt, N):  
-    length = math.floor(N/dt)
+    length = (int)(math.floor(N/dt))
     pos = zeros((length, nb_planets, 3))
     pos_old = pos_ini
     vit_old = vit_ini
@@ -142,11 +141,11 @@ def revolution(dt, N):
         vit_old = vit_next
         distance_nep[i] = linalg.norm(pos_next[4] - pos_ini[4])
         distance_plu[i] = linalg.norm(pos_next[5] - pos_ini[5])
-    print("La période de révolution de Neptune est de " + str(indice_min(distance_nep) * dt) + " jours.")
-    print("La période de révolution de Pluton est de " + str(indice_min(distance_plu) * dt) + " jours.")
+    print("La periode de revolution de Neptune est de " + str(indice_min(distance_nep) * dt) + " jours.")
+    print("La periode de revolution de Pluton est de " + str(indice_min(distance_plu) * dt) + " jours.")
 
 def solaire_anime(dt, N):
-    length = math.floor(N/dt)
+    length = (int)(math.floor(N/dt))
     pos_old = pos_ini
     vit_old = vit_ini
     x = zeros((length, nb_planets))
@@ -192,9 +191,9 @@ def solaire_anime(dt, N):
         plt.pause(0.00001)
         ax.legend()
     
-distance_soleil_ini()
+#distance_soleil_ini()
 #solaire_euler(10,200000)
 #solaire_euler_2(1000,20000)
-#solaire_stormer_verlet(200,200000)
+solaire_stormer_verlet(10,200000)
 #solaire_anime(10, 20000)
-revolution(10,200000)
+#revolution(10,200000)
