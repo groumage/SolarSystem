@@ -118,5 +118,6 @@ dmypy.json
 ressources/*
 !ressources/rapport.pdf
 !ressources/sujet.pdf
+!ressources/solar_system_simulation.png
 
 .idea/
