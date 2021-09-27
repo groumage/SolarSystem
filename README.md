@@ -14,8 +14,8 @@ We used two schemas :
 The above screenshot is generate using ``python3 solar-system.py stormer-verlet 1 45000``.
 
 This project is implemented in Python, using mainly ``numpy`` and ``matplotlib``. The
-[subject](https://github.com/SolarSystem/ressources/sujet.pdf) of this project is available, as well as
-the [report](https://github.com/SolarSystem/ressources/rapport.pdf) (written in French).
+[subject](https://github.com/groumage/SolarSystem/blob/master/ressources/sujet.pdf) of this project is available, as well as
+the [report](https://github.com/groumage/SolarSystem/blob/master/ressources/rapport.pdf) (written in French).
 
 The report is also available at [Overleaf](https://www.overleaf.com/read/kybhbxbcxtsd).
 
