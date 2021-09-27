@@ -117,3 +117,5 @@ dmypy.json
 #latex
 ressources/*
 !ressources/rapport.pdf
+
+.idea/
