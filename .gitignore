@@ -117,5 +117,6 @@ dmypy.json
 #latex
 ressources/*
 !ressources/rapport.pdf
+!ressources/sujet.pdf
 
 .idea/
