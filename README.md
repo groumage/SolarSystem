@@ -18,3 +18,7 @@ This project is implemented in Python, using mainly ``numpy`` and ``matplotlib``
 the [report](https://github.com/SolarSystem/ressources/rapport.pdf) (written in French).
 
 The report is also available at [Overleaf](https://www.overleaf.com/read/kybhbxbcxtsd).
+
+Quick execution (assuming all necessary module installed):  
+``python3 src/solar-system.py stormer-verlet 100 200000``  
+``python3 src/solar-system.py anim 1 100000 200``
