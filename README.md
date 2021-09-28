@@ -1,7 +1,7 @@
 # Simulation of the Solar System
 
 ---
-This is a student project in numerical analysis. The aim is to simulate the Solar System. We simulate the 5 main body
+This is a student project in numerical analysis. The aim is to simulate the Solar System. We simulate the 5 main bodies
 (Sun, Jupiter, Saturn and Uranus) of the solar system and Pluto. So this is a 6-body problem. The only forces taken into account are
 gravitational interactions.
 
@@ -11,7 +11,7 @@ We used two schemas :
 * Stormer-Verlet method.
 
 ![Image of solar system](https://github.com/groumage/SolarSystem/blob/master/ressources/solar_system_simulation.png?raw=true)
-The above screenshot is generate using ``python3 solar-system.py stormer-verlet 1 45000``.
+The above screenshot is generate using ``python3 src/solar-system.py stormer-verlet 1 45000``.
 
 This project is implemented in Python, using mainly ``numpy`` and ``matplotlib``. The
 [subject](https://github.com/groumage/SolarSystem/blob/master/ressources/sujet.pdf) of this project is available, as well as
