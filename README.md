@@ -7,7 +7,7 @@ gravitational interactions.
 
 Through this project we manage to have a first experience with Python and write the implementation of numerical schemas.
 We used two schemas :
-* forward Euler method
+* Forward Euler method
 * Stormer-Verlet method.
 
 ![Image of solar system](https://github.com/groumage/SolarSystem/blob/master/ressources/solar_system_simulation.png?raw=true)
